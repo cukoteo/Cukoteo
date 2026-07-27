@@ -1,0 +1,52 @@
+Using system;
+
+Class XY
+{
+
+//x:(nhẹ tâm,bám đầu) y:nhẹ tâm bám đầu static double processing Public
+(Double severity)
+
+  Return ...
+ {
+{
+
+// int deltax = targetx- cursorpos.x;
+   int deltay = targety- cursorpos.y;
+
+// int deltax = x2 - p.x;
+   int deltay = y2 - p.y;
+
+int main targetx = 30
+         
+int targety = 1000
+    
+   dreturn Lấy Int Main Nhân Int Main
+}
+
+Dreturn: 30x1000=30000
+Using system;
+
+Class XY
+{
+
+//x:(nhẹ tâm,bám đầu) y:nhẹ tâm bám đầu static double processing Public
+(Double severity)
+
+  Return ...
+ {
+{
+
+// int deltax = targetx- cursorpos.x;
+   int deltay = targety- cursorpos.y;
+
+// int deltax = x2 - p.x;
+   int deltay = y2 - p.y;
+
+int main targetx = 30
+         
+int targety = 1000
+    
+   dreturn Lấy Int Main Nhân Int Main
+}
+
+Dreturn: 30x1000=30000
