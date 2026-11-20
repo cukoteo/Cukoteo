@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Cteow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Khung giao diện chính */
+        .profile-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        /* Vùng Avatar và Cánh Thiên Thần */
+        .avatar-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Tạo hiệu ứng cánh thiên thần bằng SVG */
+        .wings {
+            position: absolute;
+            width: 220px;
+            height: 140px;
+            top: -10px;
+            z-index: 1;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+            animation: floatWings 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatWings {
+            0% { transform: scale(1) translateY(0); }
+            100% { transform: scale(1.05) translateY(-5px); }
+        }
+
+        .avatar-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            border: 3px solid #60a5fa;
+            box-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+        }
+
+        /* Tên và Tiêu đề */
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        /* Hiệu ứng chữ sáng tạo phát sáng Dpi•File */
+        .dpi-text {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #ff007f, #00f0ff, #ff007f);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: glowText 3s linear infinite;
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+        }
+
+        @keyframes glowText {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* Danh sách nút liên kết */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-zalo {
+            background: #0068ff;
+            color: #ffffff;
+        }
+
+        .btn-tiktok {
+            background: #000000;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Vùng Avatar có Cánh Thiên Thần -->
+        <div class="avatar-container">
+            <!-- Cánh thiên thần vẽ bằng đồ họa vector SVG -->
+            <svg class="wings" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M90 50 C60 10, 10 20, 0 50 C20 50, 40 40, 50 60 C30 60, 10 65, 20 80 C40 75, 60 70, 85 55 Z" fill="rgba(255,255,255,0.85)"/>
+                <path d="M110 50 C140 10, 190 20, 200 50 C180 50, 160 40, 150 60 C170 60, 190 65, 180 80 C160 75, 140 70, 115 55 Z" fill="rgba(255,255,255,0.85)"/>
+            </svg>
+
+            <!-- Ảnh Avatar (Bạn có thể thay URL ảnh của bạn vào src) -->
+            <img class="avatar-img" src="https://via.placeholder.com/150" alt="Avatar Cteow">
+        </div>
+
+        <!-- Tên -->
+        <h1 class="name">Cteow</h1>
+
+        <!-- Hiệu ứng chữ sáng tạo -->
+        <div class="dpi-text">Dpi•File làm sáng tạo</div>
+
+        <!-- Nút liên kết -->
+        <div class="links-container">
+            <a href="https://zalo.me/84583516778" target="_blank" class="btn-link btn-zalo">
+                💬 Zalo: 0583 516 778
+            </a>
+            <a href="https://www.tiktok.com/@cteowdpi.ff" target="_blank" class="btn-link btn-tiktok">
+                🎵 TikTok: @cteowdpi.ff
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
